@@ -26,6 +26,7 @@ body {
     margin: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.712);
     background-color: #a5a5a5;
+    border-radius: 10px; 
 }
 
 .flip-card-inner {
@@ -36,21 +37,20 @@ body {
     transform: rotateY(0deg);
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
 .flip-card-front,
 .flip-card-back {
     width: 100%;
     height: 100%;
     position: absolute;
+    backface-visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     color: #fff;
+    border-radius: 10px;
 }
+
 
 .category1 .flip-card-front,
 .category1 .flip-card-back {
