@@ -4,129 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Flip Card App</title>
+    <title>Flip Card Quote Generator</title>
 </head>
 <body>
 
 <div class="categories">
     <button onclick="filterCards('all')">All</button>
-    <button onclick="filterCards('category1')">Category 1</button>
-    <button onclick="filterCards('category2')">Category 2</button>
+    <button onclick="filterCards('category1')">Funny Movie Quotes</button>
+    <button onclick="filterCards('category2')">Sad Movie Quotes</button>
 </div>
 
-<div class="container" id="cardContainer">
-    <div class="flip-card category1" onclick="flipCard(this)" data-title="Card 1" data-description="Description for Card 1">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 1 Front
-            </div>
-            <div class="flip-card-back">
-                Card 1 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category1" onclick="flipCard(this)" data-title="Card 2" data-description="Description for Card 2">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 2 Front
-            </div>
-            <div class="flip-card-back">
-                Card 2 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category1" onclick="flipCard(this)" data-title="Card 3" data-description="Description for Card 3">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 3 Front
-            </div>
-            <div class="flip-card-back">
-                Card 3 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category1" onclick="flipCard(this)" data-title="Card 4" data-description="Description for Card 4">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 4 Front
-            </div>
-            <div class="flip-card-back">
-                Card 4 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category1" onclick="flipCard(this)" data-title="Card 5" data-description="Description for Card 5">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 5 Front
-            </div>
-            <div class="flip-card-back">
-                Card 5 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category2" onclick="flipCard(this)" data-title="Card 1" data-description="Description for Card 1">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 1 Front
-            </div>
-            <div class="flip-card-back">
-                Card 1 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category2" onclick="flipCard(this)" data-title="Card 2" data-description="Description for Card 2">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 2 Front
-            </div>
-            <div class="flip-card-back">
-                Card 2 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category2" onclick="flipCard(this)" data-title="Card 3" data-description="Description for Card 3">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 3 Front
-            </div>
-            <div class="flip-card-back">
-                Card 3 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category2" onclick="flipCard(this)" data-title="Card 4" data-description="Description for Card 4">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 4 Front
-            </div>
-            <div class="flip-card-back">
-                Card 4 Back
-            </div>
-        </div>
-    </div>
-
-    <div class="flip-card category2" onclick="flipCard(this)" data-title="Card 5" data-description="Description for Card 5">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                Card 5 Front
-            </div>
-            <div class="flip-card-back">
-                Card 5 Back
-            </div>
-        </div>
-    </div>
-
+<div class="container" id="quote-container">
+    
 </div>
+
+<button id="generate-quote">Generate Quote</button>
+<button id="remove-quote">Remove Quote</button>
 
 <script src="script.js"></script>
 </body>
 </html>
+
